@@ -41,6 +41,6 @@ class Program {
         contaMaria.Sacar(valor);
         contaJoao.Depositar(valor);
         contaMaria.ExibirSaldo();
-        contaJoao.ExibirSaldo(valor);
+        contaJoao.ExibirSaldo();
     }
 }
