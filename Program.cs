@@ -2,7 +2,9 @@
 using System.Diagnostics.Contracts;
 
 class ContaBancaria{
+    // Tipo por valor
     public string Titular;
+    // Tipo por valor
     public double Saldo;
     public ContaBancaria(string titular, double saldo){
         Titular = titular;
@@ -30,15 +32,15 @@ class ContaBancaria{
 
 class Program {
     static void Main(string[] args) {
+        // Tipo por referencia:
         ContaBancaria contaJoao = new ContaBancaria("Jão da Silva", 0);
-        /*contaJoao.Saldo = 10;
-        contaJoao.Depositar(400);
-        contaJoao.Sacar(100);
-        contaJoao.ExibirSaldo();*/
 
+        // Tipo por referencia:
         ContaBancaria contaMaria = new ContaBancaria("Maria", 2000);
+
+        // Tipo por valor:
         double valor = 300;
-        contaMaria.Sacar(valor);
+
         contaJoao.Depositar(valor);
         contaMaria.ExibirSaldo();
         contaJoao.ExibirSaldo();
